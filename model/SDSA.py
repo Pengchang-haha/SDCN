@@ -1,4 +1,4 @@
-#2个基础QKV侧枝再第三个块后
+
 
 import torch
 from torch import nn
@@ -8,7 +8,7 @@ from model.Nonlocal1 import *
 from model.deformable import *
 from torchvision.ops.deform_conv import DeformConv2d
 
-# WResNet
+# SDSA
 class SDSA(nn.Module):
     def __init__(self, weighted_average=True):
         super(SDSA, self).__init__()
