@@ -12,10 +12,6 @@ Code for Stacked Deformable Convolution Network with Weighted Non-local Attentio
 -tensorboardX==1.2
 -pytorch-ignite==0.1.2
 
-## TOOD(If I have free )
--Release the checkpoint of SDCN
--Simplify the code
--etc.
 
 ## Acknowledgement
 The codes borrow heavily from RADN implemented by [IIGROUP](https://github.com/IIGROUP/RADN.git) and we really appreciate it.
