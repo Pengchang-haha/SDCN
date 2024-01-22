@@ -1,22 +1,4 @@
-"""
-PyTorch 1.7 implementation of the following paper:
-    @inproceedings{RADN2021ntire,
-    title={Region-Adaptive Deformable Network for Image Quality Assessment},
-    author={Shuwei Shi and Qingyan Bai and Mingdeng Cao and Weihao Xia and Jiahao Wang and Yifan Chen and Yujiu Yang},
-    booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
-    year={2021}
-    }
 
- Requirements: See requirements.txt.
-    ```bash
-    pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-
- Acknowledgments: The codes are based on WaDIQaM and we really appreciate it.
-
- Implemented by Qingyan Bai, Shuwei Shi
- Email: baiqingyan1998@gamil.com, ssw20@mails.tsinghua.edu.cn
- Date: 2021/5/7
-"""
 
 # -*- coding : utf-8 -*-
 
@@ -188,7 +170,7 @@ class IQADataset_less_memory(Dataset):
         self.label_std = []
         self.im_names = []
         self.ref_names = []
-        # 这里为啥不是for idx in self.index,如果直接取0-len(index)直觉上认为会出问题的，一般是取index中的每个元素出来读取图片
+        
         for idx in range(len(self.index)):
             self.im_names.append(os.path.join(args.im_dir, im_names[idx]))
             if args.ref_dir is None or 'NR' in args.model:
