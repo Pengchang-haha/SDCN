@@ -2,7 +2,6 @@
 We split the PIPAL training dataset into 2 parts for training and validation, respectively.
 Codes in this file are used for testing on the validation part of the PIPAL training dataset.
 
- Date: 2021/5/7
 """
 
 from argparse import ArgumentParser
